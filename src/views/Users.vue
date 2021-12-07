@@ -2,10 +2,12 @@
   <div>
     <h1>Users</h1>
     <pre>{{ /*users*/ }}</pre>
+    <div v-if="users">
     <h2> Nom : {{users.data.first_name}} </h2>
     <h2> Prénom : {{users.data.last_name}} </h2>
     <h2> Username : {{users.data.username}} </h2>
     <h2> Email : {{users.data.email}} </h2>
+    </div>
 
   </div>
 </template>
